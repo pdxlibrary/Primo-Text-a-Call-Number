@@ -1,7 +1,9 @@
 <?php
 	/* Loads Javascript and CSS for Text a Call Number Feature */
 	
-	define("SMS_INCLUDE_PATH","//library.pdx.edu/primo/sms");
+	// Set to location of files on remote server
+	// For example: define("SMS_INCLUDE_PATH","//www.university.edu/library/primo/sms");
+	define("SMS_INCLUDE_PATH","");
 ?>
 
 
