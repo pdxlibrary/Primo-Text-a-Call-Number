@@ -1,0 +1,1 @@
+<?phpdefine("SMTP_HOST","vikat.pdx.edu");define("EMAIL_ON",true);define("LOCATION_STRING_PREFIX","Available at Millar Library");define("SMS_MESSAGE_SUBJECT","PSU Library");define("SMS_MESSAGE_FROM","NoReply@pdx.edu");define("LOG_USAGE",true);define("LOG_FILE","log.txt");?>

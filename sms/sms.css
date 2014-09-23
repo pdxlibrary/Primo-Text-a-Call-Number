@@ -1,0 +1,65 @@
+/* styles for text messaging */
+#info, #sms {
+	border:1px solid #36647b; 
+	z-index:1000; 
+	background:#efefcf; 
+}
+
+#sms {
+	display: none;
+	visibility: hidden;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:700px;
+    margin-left: -350px; /*set to a negative number 1/2 of your width*/
+    margin-top: -150px; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+#smstop {
+	background: #ccc;
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	font-size: 105%;
+	padding-bottom: 6px;
+	padding:20px;
+}
+
+#smsinput {
+	padding-left: 20px;
+	text-align: left;
+}
+
+#smsmain {
+	background:#efefcf;
+	padding:20px;
+}
+
+#sms .eg {
+	font-style:italic; 
+	font-size:80%; 
+}
+
+#info {top:500;}
+
+
+.smsbutton, #smsbutton {
+	padding: 2px 10px; 
+	color: rgb(68,68,68); 
+	background-color: #DEDEDE; 
+	border-radius: 23px 23px 23px 23px; 
+	border: 2px solid rgb(187,187,187); 
+	font-size: 95%;
+}
+
+#smsfeatures {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.smsbutton:hover, #smsbutton:hover {
+	text-decoration: none;
+	border-color: rgb(68,68,68);
+}
