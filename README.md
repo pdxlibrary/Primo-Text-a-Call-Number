@@ -7,6 +7,10 @@ Adds a Text Call Number option to the Actions Menu in the Ex Libris Primo Catalo
 # Application Installation and Setup
 Copy application files to an external web server with PHP installed.
 
+- Required Libraries
+ -  Mail Pear Module http://pear.php.net/manual/en/package.mail.mail.php
+ -  Mail_Mime Pear Module http://pear.php.net/manual/en/package.mail.mail-mime.php
+
 # Configure Settings
 
 text_a_call_number.php config setting
