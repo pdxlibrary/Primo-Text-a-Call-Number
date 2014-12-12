@@ -10,6 +10,7 @@ Copy application files to an external web server with PHP installed.
 - Required Libraries
  -  Mail Pear Module http://pear.php.net/manual/en/package.mail.mail.php
  -  Mail_Mime Pear Module http://pear.php.net/manual/en/package.mail.mail-mime.php
+ -  Net_SMPT Pear Module http://pear.php.net/package/Net_SMTP/
 
 # Configure Settings
 
