@@ -8,8 +8,8 @@ Adds a Text Call Number option to the Actions Menu in the Ex Libris Primo Catalo
 Copy application files to an external web server with PHP installed.
 
 - Required Libraries
- -  Mail Pear Module http://pear.php.net/manual/en/package.mail.mail.php
- -  Mail_Mime Pear Module http://pear.php.net/manual/en/package.mail.mail-mime.php
+ -  Mail Pear Module http://pear.php.net/package/Mail
+ -  Mail_Mime Pear Module http://pear.php.net/package/Mail_Mime
  -  Net_SMPT Pear Module http://pear.php.net/package/Net_SMTP/
 
 # Configure Settings
