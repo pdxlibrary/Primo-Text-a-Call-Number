@@ -11,7 +11,7 @@ Adds a Text Call Number option to the Actions Menu in the Ex Libris Primo Catalo
 - PBO (to Update your Primo Theme to add Custom JavaScript)
 - Basic PHP
 - Basic CSS
-- Basic JavaScript
+- Intermediate JavaScript
 - Intermediate Server Management (if Pear module dependancies are not already available)
 
 ### Implementation (Recipe) Steps
@@ -74,3 +74,5 @@ Note: If the logging setting has been set to true in config.php , set the log fi
 <link rel="stylesheet" type="text/css" href="//www.university.edu/primo/sms/sms.css">
 ```
 
+#### Step 5) Update Send To Actions Menu Script
+To include the links for sending a record via Text to the Send To Actions Menu for each item, the custom script will need to be augmented to include a placeholder for the new option.
