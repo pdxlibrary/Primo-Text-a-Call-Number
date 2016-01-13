@@ -1,10 +1,25 @@
-Primo-Text-a-Call-Number
+Primo Text a Call Number
 ========================
 
 Adds a Text Call Number option to the Actions Menu in the Ex Libris Primo Catalog Search Interface
 
+### System Components
+ - PBO
+ - Remote Web Server with PHP
 
-# Application Installation and Setup
+### Skillset Requirements
+- PBO (to Update your Primo Theme to add Custom JavaScript)
+- Basic PHP
+
+### Implementation (Recipe) Steps
+
+#### Step 0) Update Primo Theme to Install Send To Actions Menu Customization (project link coming soon...)
+```html
+<!-- Add Send To links to the record level -->
+<script src="//www.university.edu/js/send-to-links.js"></script>
+```
+
+#### Step 1) Application Installation and Setup
 Copy application files to an external web server with PHP installed.
 
 - Required Libraries
@@ -12,7 +27,7 @@ Copy application files to an external web server with PHP installed.
  -  Mail_Mime Pear Module http://pear.php.net/package/Mail_Mime
  -  Net_SMTP Pear Module http://pear.php.net/package/Net_SMTP/
 
-# Configure Settings
+#### Step 2) # Configure Settings
 
 text_a_call_number.php config setting
 
@@ -24,10 +39,8 @@ define("SMS_INCLUDE_PATH","");
 
 ```
 
-sms/config.php config settings
-
+#### Step 3) sms/config.php config settings
 ```php
-
 // set smtp mail host for sending text message emails
 define("SMTP_HOST","smtp.university.edu");
 
@@ -48,24 +61,13 @@ define("LOG_USAGE",false);
 
 // set the name/location of the log file, if logging is on
 define("LOG_FILE","log.txt");
-
 ```
+Note: If the logging setting has been set to true in config.php , set the log file's permissions to be writable by the server.
 
-# Logging (optional)
-
-After logging setting has been set to true in config.php, set log file permissions to be writable.
-
-# Primo Configuration Changes
-
-- Login to Primo Back Office
-- Click *Configuration & Management Wizards* - *Ongoing Configuration Wizards*
-- Click *Views Wizard*
-- Click *Edit* for relevant template where you want to enable Text a Call Number
-- Click *Edit* for the *Layout Set*
-- For the *Brief Display* and *Full Display*:
-  - Add a custom tile in the exlidHeaderContainer div, called text_a_call_number
-  - For the new custom tile, set the css id and class to: text_a_call_number
-  - Set the URL to the location of the text_a_call_number.php application file
-    - For example: http://www.university.edu/library/primo/sms/text_a_call_number.php
-- Continue through the *Views Wizard* to save and deploy changes
+#### Step 4) Update Primo Theme to Include JavaScript and CSS Files
+```html
+<!-- Text Call Number -->
+<script src="//www.university.edu/primo/sms/sms.js"></script>
+<link rel="stylesheet" type="text/css" href="//www.university.edu/primo/sms/sms.css">
+```
 
