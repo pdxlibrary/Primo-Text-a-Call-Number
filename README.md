@@ -10,6 +10,9 @@ Adds a Text Call Number option to the Actions Menu in the Ex Libris Primo Catalo
 ### Skillset Requirements
 - PBO (to Update your Primo Theme to add Custom JavaScript)
 - Basic PHP
+- Basic CSS
+- Basic JavaScript
+- Intermediate Server Management (if Pear module dependancies are not already available)
 
 ### Implementation (Recipe) Steps
 
